@@ -1,0 +1,358 @@
+
+
+reduced to {{ $MODIFIER }}$
+
+
+$identifier$ : $identifier$
+reduced to IDENTIFIER
+
+
+reduced to {{ $. IDENTIFIER }}$
+
+
+$identifier$ : $identifier$
+reduced to IDENTIFIER
+
+
+IDENTIFIER : IDENTIFIER
+. : .
+{{ $. IDENTIFIER }}$ : {{ $. IDENTIFIER }}$
+reduced to {{ $. IDENTIFIER }}$
+
+
+$identifier$ : $identifier$
+reduced to IDENTIFIER
+
+
+IDENTIFIER : IDENTIFIER
+. : .
+{{ $. IDENTIFIER }}$ : {{ $. IDENTIFIER }}$
+reduced to {{ $. IDENTIFIER }}$
+
+
+; : ;
+{{ $. IDENTIFIER }}$ : {{ $. IDENTIFIER }}$
+IDENTIFIER : IDENTIFIER
+package : package
+{{ $MODIFIER }}$ : {{ $MODIFIER }}$
+reduced to PACKAGE_DECLARATION
+
+
+PACKAGE_DECLARATION : PACKAGE_DECLARATION
+reduced to [[ $PACKAGE_DECLARATION ]]$
+
+
+reduced to {{ $IMPORT_DECLARATION }}$
+
+
+$identifier$ : $identifier$
+reduced to IDENTIFIER
+
+
+IDENTIFIER : IDENTIFIER
+reduced to SIMPLE_NAME
+
+
+SIMPLE_NAME : SIMPLE_NAME
+reduced to NAME
+
+
+$identifier$ : $identifier$
+reduced to IDENTIFIER
+
+
+IDENTIFIER : IDENTIFIER
+. : .
+NAME : NAME
+reduced to QUALIFIED_NAME
+
+
+QUALIFIED_NAME : QUALIFIED_NAME
+reduced to NAME
+
+
+$identifier$ : $identifier$
+reduced to IDENTIFIER
+
+
+IDENTIFIER : IDENTIFIER
+. : .
+NAME : NAME
+reduced to QUALIFIED_NAME
+
+
+QUALIFIED_NAME : QUALIFIED_NAME
+reduced to NAME
+
+
+; : ;
+NAME : NAME
+import : import
+reduced to SINGLE_TYPE_IMPORT_DECLARATION
+
+
+SINGLE_TYPE_IMPORT_DECLARATION : SINGLE_TYPE_IMPORT_DECLARATION
+reduced to IMPORT_DECLARATION
+
+
+IMPORT_DECLARATION : IMPORT_DECLARATION
+{{ $IMPORT_DECLARATION }}$ : {{ $IMPORT_DECLARATION }}$
+reduced to {{ $IMPORT_DECLARATION }}$
+
+
+$identifier$ : $identifier$
+reduced to IDENTIFIER
+
+
+IDENTIFIER : IDENTIFIER
+reduced to SIMPLE_NAME
+
+
+SIMPLE_NAME : SIMPLE_NAME
+reduced to NAME
+
+
+$identifier$ : $identifier$
+reduced to IDENTIFIER
+
+
+IDENTIFIER : IDENTIFIER
+. : .
+NAME : NAME
+reduced to QUALIFIED_NAME
+
+
+QUALIFIED_NAME : QUALIFIED_NAME
+reduced to NAME
+
+
+$identifier$ : $identifier$
+reduced to IDENTIFIER
+
+
+IDENTIFIER : IDENTIFIER
+. : .
+NAME : NAME
+reduced to QUALIFIED_NAME
+
+
+QUALIFIED_NAME : QUALIFIED_NAME
+reduced to NAME
+
+
+; : ;
+NAME : NAME
+import : import
+reduced to SINGLE_TYPE_IMPORT_DECLARATION
+
+
+SINGLE_TYPE_IMPORT_DECLARATION : SINGLE_TYPE_IMPORT_DECLARATION
+reduced to IMPORT_DECLARATION
+
+
+IMPORT_DECLARATION : IMPORT_DECLARATION
+{{ $IMPORT_DECLARATION }}$ : {{ $IMPORT_DECLARATION }}$
+reduced to {{ $IMPORT_DECLARATION }}$
+
+
+$identifier$ : $identifier$
+reduced to IDENTIFIER
+
+
+IDENTIFIER : IDENTIFIER
+reduced to SIMPLE_NAME
+
+
+SIMPLE_NAME : SIMPLE_NAME
+reduced to NAME
+
+
+$identifier$ : $identifier$
+reduced to IDENTIFIER
+
+
+IDENTIFIER : IDENTIFIER
+. : .
+NAME : NAME
+reduced to QUALIFIED_NAME
+
+
+QUALIFIED_NAME : QUALIFIED_NAME
+reduced to NAME
+
+
+$identifier$ : $identifier$
+reduced to IDENTIFIER
+
+
+IDENTIFIER : IDENTIFIER
+. : .
+NAME : NAME
+reduced to QUALIFIED_NAME
+
+
+QUALIFIED_NAME : QUALIFIED_NAME
+reduced to NAME
+
+
+; : ;
+NAME : NAME
+import : import
+reduced to SINGLE_TYPE_IMPORT_DECLARATION
+
+
+SINGLE_TYPE_IMPORT_DECLARATION : SINGLE_TYPE_IMPORT_DECLARATION
+reduced to IMPORT_DECLARATION
+
+
+IMPORT_DECLARATION : IMPORT_DECLARATION
+{{ $IMPORT_DECLARATION }}$ : {{ $IMPORT_DECLARATION }}$
+reduced to {{ $IMPORT_DECLARATION }}$
+
+
+$identifier$ : $identifier$
+reduced to IDENTIFIER
+
+
+IDENTIFIER : IDENTIFIER
+reduced to SIMPLE_NAME
+
+
+SIMPLE_NAME : SIMPLE_NAME
+reduced to NAME
+
+
+$identifier$ : $identifier$
+reduced to IDENTIFIER
+
+
+IDENTIFIER : IDENTIFIER
+. : .
+NAME : NAME
+reduced to QUALIFIED_NAME
+
+
+QUALIFIED_NAME : QUALIFIED_NAME
+reduced to NAME
+
+
+$identifier$ : $identifier$
+reduced to IDENTIFIER
+
+
+IDENTIFIER : IDENTIFIER
+. : .
+NAME : NAME
+reduced to QUALIFIED_NAME
+
+
+QUALIFIED_NAME : QUALIFIED_NAME
+reduced to NAME
+
+
+$identifier$ : $identifier$
+reduced to IDENTIFIER
+
+
+IDENTIFIER : IDENTIFIER
+. : .
+NAME : NAME
+reduced to QUALIFIED_NAME
+
+
+QUALIFIED_NAME : QUALIFIED_NAME
+reduced to NAME
+
+
+; : ;
+NAME : NAME
+import : import
+reduced to SINGLE_TYPE_IMPORT_DECLARATION
+
+
+SINGLE_TYPE_IMPORT_DECLARATION : SINGLE_TYPE_IMPORT_DECLARATION
+reduced to IMPORT_DECLARATION
+
+
+IMPORT_DECLARATION : IMPORT_DECLARATION
+{{ $IMPORT_DECLARATION }}$ : {{ $IMPORT_DECLARATION }}$
+reduced to {{ $IMPORT_DECLARATION }}$
+
+
+reduced to {{ $TOP_LEVEL_CLASS_OR_INTERFACE_DECLARATION }}$
+
+
+reduced to {{ $MODIFIER }}$
+
+
+public : public
+reduced to MODIFIER
+
+
+MODIFIER : MODIFIER
+{{ $MODIFIER }}$ : {{ $MODIFIER }}$
+reduced to {{ $MODIFIER }}$
+
+
+$identifier$ : $identifier$
+reduced to TYPE_IDENTIFIER
+
+
+reduced to [[ $TYPE_PARAMETERS ]]$
+
+
+reduced to [[ $CLASS_EXTENDS ]]$
+
+
+reduced to [[ $CLASS_IMPLEMENTS ]]$
+
+
+reduced to [[ $CLASS_PERMITS ]]$
+
+
+reduced to {{ $CLASS_BODY_DECLARATION }}$
+
+
+reduced to {{ $MODIFIER }}$
+
+
+public : public
+reduced to MODIFIER
+
+
+MODIFIER : MODIFIER
+{{ $MODIFIER }}$ : {{ $MODIFIER }}$
+reduced to {{ $MODIFIER }}$
+
+
+static : static
+reduced to MODIFIER
+
+
+MODIFIER : MODIFIER
+{{ $MODIFIER }}$ : {{ $MODIFIER }}$
+reduced to {{ $MODIFIER }}$
+
+
+$identifier$ : $identifier$
+reduced to IDENTIFIER
+
+
+$identifier$ : $identifier$
+reduced to TYPE_IDENTIFIER
+
+
+TYPE_IDENTIFIER : TYPE_IDENTIFIER
+reduced to UNANN_TYPE_VARIABLE
+
+
+UNANN_TYPE_VARIABLE : UNANN_TYPE_VARIABLE
+reduced to UNANN_REFERENCE_TYPE
+
+
+UNANN_REFERENCE_TYPE : UNANN_REFERENCE_TYPE
+reduced to UNANN_TYPE
+
+
+reduced to [[ $IDENTIFIER . ]]$
+org.posl.analyzer.CompilationException: Illegal token "[".
