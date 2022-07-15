@@ -1,4 +1,4 @@
-# JavaAnalyser17
+# Java-Analyser17
 
 ## Java 17 parser is coming soon!
 
